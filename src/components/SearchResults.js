@@ -5,13 +5,14 @@ import React, {Component} from 'react';
 class SearchResults extends Component {
 
   render() {
-    // this.props.articles.map((article) => {
-    //   <h1>{article.url}</h1>
-    // })
-
+    // debugger
+    var result = this.props.articles.map((article) => (
+      <h3>{article.web_url}</h3>
+    ))
+debugger
     return (
       <div className='results-list'>
-        HELLO WORLD
+        {result}
       </div>
     );
   }

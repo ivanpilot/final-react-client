@@ -20,19 +20,18 @@ export class App extends Component {
     return (
       <div className="App">
         <Router>
-             <div className="app">
-             <div className="navbar">
-                 <NavBar />
-              </div>
-              <Route exact path="/" component={Home} />
-              <Route exact path="/saved" component={Saved} />
-              <Route exact path="/search" component={Search} />
-
-
-             </div>
-          </Router>
-          {this.props.articles ?
-            <ArticleCard /> : null }
+          <div className="app">
+          <div className="navbar">
+                <NavBar />
+            </div>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/saved" component={Saved} />
+            <Route exact path="/search" component={Search} />
+          </div>
+        </Router>
+          { this.props.articles ?
+            (<ArticleCard />) : (null)
+          }
       </div>
     );
   }
