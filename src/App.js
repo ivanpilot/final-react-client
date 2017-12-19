@@ -21,8 +21,8 @@ export class App extends Component {
       <div className="App">
         <Router>
           <div className="app">
-          <div className="navbar">
-                <NavBar />
+            <div className="navbar">
+              <NavBar />
             </div>
             <Route exact path="/" component={Home} />
             <Route exact path="/saved" component={Saved} />

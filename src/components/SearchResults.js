@@ -5,11 +5,11 @@ import React, {Component} from 'react';
 class SearchResults extends Component {
 
   render() {
-    // debugger
+    debugger
     var result = this.props.articles.map((article) => (
       <h3>{article.web_url}</h3>
     ))
-debugger
+// debugger
     return (
       <div className='results-list'>
         {result}
